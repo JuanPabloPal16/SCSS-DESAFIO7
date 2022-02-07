@@ -1,0 +1,291 @@
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*BOOTSTRAP*/
+#ulNavBar {
+  display: flex;
+  justify-content: flex-end; }
+
+/*MAIN INICIO*/
+#mainInicio {
+  background-image: url(../img/fondomarmolrosa.png);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 10% 30% 20% 20%;
+  grid-template-areas: "titulo1 titulo1" "texto3 img4";
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center; }
+  #mainInicio .tituloInicio {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    background-color: #ffe5ec;
+    grid-area: titulo1; }
+  #mainInicio .subtituloInicio {
+    grid-area: texto3;
+    font-size: 45px;
+    font-family: "Bebas Neue", cursive; }
+  #mainInicio .textoInicio {
+    grid-area: texto3;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif; }
+  #mainInicio .divLogo {
+    grid-area: img4;
+    width: 100%;
+    height: 100%; }
+
+/*FOOTER*/
+footer {
+  height: 120px;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #F6A5EB; }
+  footer .link {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "facebook facebook" " instagram instragram"; }
+    footer .link .aFooter {
+      text-decoration: none;
+      color: white;
+      font-family: 'Staatliches', cursive;
+      display: flex;
+      flex-direction: row;
+      grid-area: facebook;
+      padding-right: 10px; }
+      footer .link .aFooter .aFooter:hover {
+        color: blue; }
+      footer .link .aFooter .iredes {
+        position: relative;
+        top: 5px; }
+    footer .link .aFooter:hover {
+      color: #3333fa; }
+    footer .link .aFooter1 {
+      text-decoration: none;
+      color: white;
+      font-family: 'Staatliches', cursive;
+      display: flex;
+      flex-direction: row;
+      grid-area: instagram;
+      padding-right: 10px; }
+      footer .link .aFooter1 .iredes1 {
+        position: relative;
+        top: 5px;
+        height: 20px; }
+    footer .link .aFooter1:hover {
+      color: #3333fa; }
+  footer .logoFooter {
+    height: 115px;
+    width: 115px;
+    position: absolute;
+    left: 10px; }
+
+/*MAIN PRODUCTOS*/
+#mainProducto {
+  height: 3000px;
+  width: 100%;
+  background-color: black; }
+  #mainProducto .tituloProducto {
+    grid-area: titulo1;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    background-color: #ffe5ec; }
+  #mainProducto #padreGaleria {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 20px; }
+    #mainProducto #padreGaleria .jean1, #mainProducto #padreGaleria .jean2, #mainProducto #padreGaleria .jean4, #mainProducto #padreGaleria .jean5, #mainProducto #padreGaleria .jean6 {
+      grid-area: foto1;
+      height: 100%;
+      width: 100%; }
+    #mainProducto #padreGaleria .jean2 {
+      grid-area: foto2; }
+    #mainProducto #padreGaleria .jean3 {
+      grid-area: foto3;
+      height: 100%;
+      width: 100%; }
+    #mainProducto #padreGaleria .jean4 {
+      grid-area: foto4; }
+    #mainProducto #padreGaleria .jean5 {
+      grid-area: foto5; }
+    #mainProducto #padreGaleria .jean6 {
+      grid-area: foto6; }
+
+/*ENVIO*/
+#mainEnvio {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../img/fondoenvio.jpg); }
+  #mainEnvio .tituloEnvio {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    background-color: #ffe5ec; }
+  #mainEnvio #divEnvio {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "envio1 listado2" " envio1 listado2" "mapa3 mapa3";
+    justify-content: center; }
+    #mainEnvio #divEnvio .subtituloEnvio {
+      font-size: 45px;
+      font-family: "Bebas Neue", cursive; }
+    #mainEnvio #divEnvio .formaEnvio {
+      grid-area: listado2;
+      font-size: 45px;
+      font-family: "Bebas Neue", cursive; }
+    #mainEnvio #divEnvio .explicacionEnvio {
+      grid-area: texto3;
+      font-size: 30px;
+      font-family: 'Work Sans', sans-serif; }
+    #mainEnvio #divEnvio .listaEnvio {
+      grid-area: envio1; }
+    #mainEnvio #divEnvio .subtituloEncuentro {
+      font-size: 45px;
+      font-family: "Bebas Neue", cursive; }
+    #mainEnvio #divEnvio .listaEncuentro {
+      font-size: 35px;
+      font-family: "Bebas Neue", cursive; }
+    #mainEnvio #divEnvio mapa {
+      grid-area: mapa3; }
+  #mainEnvio #parrafoEnvio {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 45px;
+    font-family: "Bebas Neue", cursive; }
+
+/*COMO COMPRAR*/
+#mainCompra {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../img/fondoproductos.jpg); }
+  #mainCompra .tituloCompra {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    background-color: #ffe5ec; }
+  #mainCompra #gridCompra {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "encuentra1 compra2" "encuentro1 compra2";
+    justify-content: center;
+    margin: 0 1%; }
+    #mainCompra #gridCompra .subtituloEncuentra {
+      font-size: 45px;
+      font-family: "Bebas Neue", cursive; }
+    #mainCompra #gridCompra .explicacionEncuentra {
+      font-size: 30px;
+      font-family: 'Work Sans', sans-serif; }
+    #mainCompra #gridCompra .subtituloCompra {
+      font-size: 45px;
+      font-family: "Bebas Neue", cursive; }
+    #mainCompra #gridCompra .explicacionCompra {
+      font-size: 30px;
+      font-family: 'Work Sans', sans-serif; }
+  #mainCompra #logoCompra {
+    display: flex;
+    position: relative;
+    left: 550px;
+    height: 400px;
+    width: 400px;
+    padding: 60px; }
+
+/*CONTACTO*/
+#mainContacto {
+  height: 1000px;
+  width: 100%;
+  background-image: url(../img/fondocontactos.png); }
+  #mainContacto .tituloContacto {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    background-color: #ffe5ec; }
+  #mainContacto #gridContacto {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fila1 fila2" "fila3 fila3";
+    justify-content: center;
+    margin: 0 10px; }
+  #mainContacto #divContacto {
+    grid-area: fila1; }
+    #mainContacto #divContacto .subtituloContacto {
+      display: flex;
+      justify-content: center;
+      font-size: 45px;
+      font-family: 'Bebas Neue', cursive; }
+    #mainContacto #divContacto .ulContacto {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px; }
+      #mainContacto #divContacto .ulContacto .licontacto {
+        padding: 10px; }
+        #mainContacto #divContacto .ulContacto .licontacto #redescontacto {
+          color: #a0d4f8;
+          font-size: 30px;
+          text-decoration: none; }
+        #mainContacto #divContacto .ulContacto .licontacto #redescontacto:hover {
+          color: #9BD1A7;
+          background-color: rgba(0, 0, 0, 0.096); }
+  #mainContacto .mapaContacto {
+    grid-area: fila3;
+    padding: 50px; }
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 768px) {
+  #mainInicio {
+    background-image: url(../img/fondomarmolrosa.png);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 50% 30%;
+    grid-template-areas: "titulo1 titulo1" "texto3 texto3" "img4 img4";
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center; }
+  .subtituloInicio {
+    display: flex;
+    padding: 0;
+    grid-area: texto3;
+    font-size: 45px;
+    font-family: "Bebas Neue", cursive; }
+  .textoInicio {
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: texto3;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif; }
+  .divLogo {
+    display: flex;
+    justify-content: center;
+    grid-area: img4;
+    width: 100%;
+    height: 100%; }
+  .subYtexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; } }
